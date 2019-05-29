@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,500,900i&display=swap');
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body {
   font-family: "Rubik", Arial;
   font-size: 18px;
@@ -43,6 +48,33 @@ header a {
 
 header.scrolled {
   background-color: #FFFFFF;
+}
+
+/* styling the eyeballs */
+
+div.iris {
+  position: absolute;
+  top: 23px;
+  left: 11px;
+}
+
+div.iris-right {
+  left: 49px;
+}
+
+div.face {
+  position: relative;
+}
+
+div.iris div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #052837;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -111,4 +143,8 @@ section.content:nth-child(odd) {
 
 section.content:nth-child(odd) div.content {
   margin: 0 48px 0 48px;
+}
+
+h2, h3, p, section img, a.button {
+  opacity: 0;
 }
