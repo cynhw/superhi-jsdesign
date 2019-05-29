@@ -26,6 +26,7 @@ header {
   align-items: center;
   padding: 0px 48px 0px 48px;
 
+  transition: background-color 1s;
 }
 
 header h1, header nav {
@@ -38,6 +39,10 @@ header nav {
 
 header a {
   margin: 0 0 0 16px;
+}
+
+header.scrolled {
+  background-color: #FFFFFF;
 }
 
 h1 {
